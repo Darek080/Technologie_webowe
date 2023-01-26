@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Page Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(14, 102, 143);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  float: left;
+  width: 10%;
+  height: 1000px;
+  background: rgb(56, 142, 255);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  line-height:200%
+}
+
+li a {
+  color: white;
+  padding: 40px;
+}
+
+article {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: large;
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: 200px; 
+}
+picture{
+    float: left;
+  padding: 20px;
+  width: 90%;
+  text-align:center;
+  background-color: #f1f1f1;
+  height: 500px;
+  
+}
+table {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #b6d6e0;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 2px solid #464646;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c4b2ee;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Lab HTML5</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Treści</a></li><p></p>
+      <li><a href="#">Obrazek</a></li><p></p>
+      <li><a href="#">Tabela</a></li>
+    </ul>
+  </nav>
+<!-- ------------------------------------------------ -->
+<article>
+  <h3 style="text-align:center;">Treści</h3>
+    The youngster drives a GR Yaris for reigning manufacturers’ champions Toyota Gazoo Racing alongside Elfyn Evans and Sébastien Ogier,
+    who bids for a record ninth Monte win next week. Takamoto Katsuta also fields a similar car, although he will not score manufacturers’ points.
+    More info's at link: <a href="https://www.wrc.com/en/news/2023/wrc/entry-list-rallye-monte-carlo/">RALLYE MONTE-CARLO</a>
+</article>
+
+<!-- ------------------------------------------------ -->
+<picture>
+  <h3>Obrazek</h3>
+<b>Obrazek przedstawia nową broń M-sport, jest to Ford Puma WRC 2023</b>
+<p></p>
+<img src="ford.jpg" alt="Przykładowy obrazek"
+  style="width:500px;height:330px;">
+</picture>
+
+<!-- ------------------------------------------------ -->
+<table>
+  <h3 style="text-align:center; background-color:  #f1f1f1;">Tabela</h3>
+  <h4 style="text-align:center; background-color:  #f1f1f1;">Entry list Rally Monte-Carlo</h4>
+
+    <tr style = "background-color: #00c8ff;">
+      <th >Driver</th> <th>Car</th> <th>Clas</th> 
+    </tr>
+    <tr><td>Ott Tänak</td><td>Ford Puma WRC</td><td>WRC</td>
+    </tr>
+    <tr><td>Thierry Neuville</td><td>Hyundai i20 WRC</td><td>WRC</td>
+    </tr>
+    <tr><td>Sébastien Ogier</td><td>Toyota Yaris WRC</td><td>WRC</td>
+    </tr>
+    <tr><td>Oliver Solberg</td><td>Skoda Fabia R5</td><td>WRC 2</td>
+  </table>
+
+</section>
+<!-- ------------------------------------------------ -->
+<footer>
+    Autor: <address>Dariusz Bobek (dbobek@wszib.edu.pl)</address>
+    <p>wszelkie prawa zastrzeżone</p>
+</footer>
+
+</body>
+</html>
