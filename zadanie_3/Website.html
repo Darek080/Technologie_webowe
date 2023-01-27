@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="kalkulator.js">
+    </script>
+    <style>
+        header {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: large;
+            padding: 20px;
+            text-align:center;
+            background-color: #f1f1f1;
+            height: 100px;
+        } 
+        select {
+            text-align:center;
+            float: center;
+        }
+        </style>
+</head>
+<body>
+    
+	<header>
+		<h1>Kalkulator jednostek</h1>
+	</header>
+
+<p style="text-align:center;">
+    <h3 style="text-align:center;"> Podaj wartość i jednostkę do przeliczenia  </h3>
+    
+    
+    <p style="text-align:center;">
+        <input type="number" id="inputValue" min="0">
+
+    <select id="inputUnit">
+        <option value="m">Metry</option>
+        <option value="km">Kilometry</option>
+        <option value="mm">Milimetry</option>
+    </select>
+</p>
+</p>
+    <h4 style="text-align:center;">Przelicz na: </h4>
+
+<p style="text-align:center;">
+
+    <button id = "bt1">Milimetry</button>
+    <button id = "bt2">Metry</button>
+    <button id = "bt3">Kilometry</button>
+</p>
+
+<h2 style="text-align:center;">Wynik:</h2>
+<p style="text-align:center;" id="message"></p>
+
+</body>
+</html>
